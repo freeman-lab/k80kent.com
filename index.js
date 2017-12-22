@@ -119,13 +119,13 @@ css(name, {
 name.innerHTML = "Katie Kent"
 
 if (!ismobile) {
-var description = document.body.appendChild(document.createElement('div'))
-css(description, {
-  position: 'absolute', left: '75%', bottom: '12%', width: '20%',
-  fontSize: '22pt', color: colors[0].hex,
-  fontFamily: 'Crimson Text', lineHeight: '26pt'
-})
-description.innerHTML = "Hi! I'm Katie. I like to solve tricky human problems with data & software. Currently, I'm a Product Manager at Flexport, where my team builds the 'Uber Pool' of ocean container shipping. In my free time, I like adventuring, outdoors, yoga, and red pandas."
+  var description = document.body.appendChild(document.createElement('div'))
+  css(description, {
+    position: 'absolute', left: '75%', bottom: '12%', width: '20%',
+    fontSize: '22pt', color: colors[0].hex,
+    fontFamily: 'Crimson Text', lineHeight: '26pt'
+  })
+  description.innerHTML = "Hi! I'm Katie. I like to solve tricky human problems with data & software. Currently, I'm a Product Manager at Flexport, where my team builds the 'Uber Pool' of ocean container shipping. In my free time, I like adventuring, outdoors, yoga, and red pandas."
 }
 
 var linkedin = document.body.appendChild(document.createElement('a'))
@@ -147,5 +147,17 @@ css(twitter, {
   fontFamily: 'Crimson Text', borderBottom: colors[0].hex + ' dotted 2px',
   textDecoration: 'none'
 })
-twitter.innerHTML = 'twitter'
+twitter.innerHTML = '@k80kent'
 twitter.href = 'https://twitter.com/k80kent'
+
+var profile = document.body.appendChild(document.createElement('img'))
+css(profile, {
+  position: 'absolute', left: '75%', top: '20%', width: '100px'
+})
+profile.src = './katie.jpg'
+
+var overlay = document.body.appendChild(document.createElement('div'))
+css(profile, {
+  position: 'absolute', left: '75%', top: '20%', width: '100px',
+  border: colors[0].hex + ' dotted 2px'
+})
