@@ -15,6 +15,9 @@ npm run build
 surge site <domain>
 ```
 
+- [ ] fork the repo
+- [ ] deploy with correct DNS
+
 ## feature ideas
 
 - [ ] add links to other external sites
